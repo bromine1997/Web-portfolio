@@ -60,32 +60,11 @@
     background: var(--bg-section);
 }
 
-/* 이미지가 링크일 때 커서 포인터 */
-a.project-card-image {
-    display: block;
-    cursor: pointer;
-}
-
-a.project-card-image img {
-    transition: transform 0.3s ease;
-}
-
-a.project-card-image:hover img {
-    transform: scale(1.04);
-}
-
 .project-card-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
-}
-
-/* 버튼 여러 개일 때 가로 배열 */
-.project-card-links {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
 }
 
 .project-card-image-placeholder {
