@@ -1,0 +1,78 @@
+/* ================================================
+   variables.css — CSS 변수 / 리셋 / 공통 베이스
+   ================================================ */
+
+:root {
+    --bg: #ffffff;
+    --bg-soft: #f7f8fa;
+    --bg-section: #f3f4f6;
+    --yellow: #FFCD00;
+    --yellow-hover: #e6b800;
+    --yellow-light: rgba(255, 205, 0, 0.10);
+    --yellow-border: rgba(255, 205, 0, 0.40);
+    --text: #1a1a1a;
+    --text-muted: #666666;
+    --text-soft: #999999;
+    --border: rgba(0, 0, 0, 0.08);
+    --shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
+    --shadow-hover: 0 10px 40px rgba(0, 0, 0, 0.12);
+    --radius-lg: 22px;
+    --radius: 14px;
+    --radius-sm: 8px;
+}
+
+/* ── Reset ── */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    overflow-x: hidden;
+}
+
+a {
+    transition: all 0.2s ease;
+}
+
+/* ── 공통 섹션 ── */
+section {
+    padding: 96px 24px;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+/* ── 섹션 제목 ── */
+.section-heading {
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(2rem, 4.5vw, 3.2rem);
+    font-weight: 700;
+    color: var(--text);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 56px;
+    position: relative;
+    display: inline-block;
+}
+
+.section-heading::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    width: 52px;
+    height: 4px;
+    border-radius: 999px;
+    background: var(--yellow);
+}

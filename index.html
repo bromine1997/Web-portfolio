@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>펌웨어 개발자 서보민</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/experience.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav>
+    <ul>
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- ── HERO ── -->
+<section id="hero">
+    <div class="hero-inner">
+        <div class="hero-eyebrow">Firmware / Embedded Developer</div>
+        <h1><span id="typing-text"></span></h1>
+        <p class="hero-subtitle">하드웨어와 소프트웨어를 함께 다루는 임베디드 개발자</p>
+        <div class="hero-tags">
+            <span>C / C++</span>
+            <span>ATmega · ESP32</span>
+            <span>SPI · I2C · UART</span>
+            <span>PID 제어</span>
+            <span>IoT · NestJS</span>
+        </div>
+    </div>
+</section>
+
+<!-- ── PROFILE ── -->
+<section id="profile">
+    <div class="container">
+        <div class="section-heading reveal">Profile</div>
+        <div class="profile-grid">
+            <div class="profile-photo-wrap reveal">
+                <img src="images/myphoto.jpg" alt="서보민"
+                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="profile-photo-placeholder" style="display:none;">👤</div>
+            </div>
+            <div class="profile-info reveal">
+                <h2>서보민 <span>SEO BO MIN</span></h2>
+                <div class="profile-badge">Firmware / Embedded Developer</div>
+                <ul class="profile-contact">
+                    <li>
+                        <span class="icon">✉</span>
+                        <a href="mailto:sbm8011@naver.com">sbm8011@naver.com</a>
+                    </li>
+                    <li>
+                        <span class="icon">☎</span>
+                        <a href="tel:01084329735">010-8432-9735</a>
+                    </li>
+                    <li>
+                        <span class="icon">⊙</span>
+                        <span>경기도 화성시 동탄</span>
+                    </li>
+                    <li>
+                        <span class="icon">◎</span>
+                        <a href="https://github.com/bromine1997" target="_blank">github.com/bromine1997</a>
+                    </li>
+                    <li>
+                        <span class="icon">✎</span>
+                        <a href="https://bromine1997.tistory.com/" target="_blank">bromine1997.tistory.com</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── ABOUT TEXT ── -->
+<section id="about-text">
+    <div class="container">
+        <div class="about-catchphrase reveal">코드가 아니라 시스템을 만드는 개발자입니다.</div>
+        <div class="about-body reveal">
+            <p>하드웨어와 소프트웨어를 함께 다루는 임베디드 개발자 서보민입니다.<br>
+            센서 데이터를 읽고, 제어 로직이 동작하고, 제가 만든 시스템이 실제 장치에서 움직일 때 가장 즐겁습니다.</p>
+            <p>석사 과정에서는 IoT 기반 고압산소치료기 시스템을 개발하며 센서 인터페이스, 제어 로직, 데이터 수집 시스템을 직접 구현했습니다.
+            센서 오류, 통신 문제, 제어 안정성 같은 문제를 하나씩 수정하며 시스템을 완성했습니다.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ── SKILLS ── -->
+<section id="skills">
+    <div class="container">
+        <div class="section-heading reveal">Skills</div>
+        <div class="skills-grid">
+            <div class="skill-group reveal">
+                <h3>Language</h3>
+                <ul class="skill-list">
+                    <li><span class="skill-dot"></span>C &nbsp;— Embedded / Driver / Control</li>
+                    <li><span class="skill-dot"></span>C++ &nbsp;— Embedded OOP</li>
+                    <li><span class="skill-dot"></span>Java &nbsp;— Android (MVVM)</li>
+                </ul>
+            </div>
+            <div class="skill-group reveal">
+                <h3>MCU / Hardware</h3>
+                <ul class="skill-list">
+                    <li><span class="skill-dot"></span>STM32</li>
+                    <li><span class="skill-dot"></span>ESP32</li>
+                    <li><span class="skill-dot"></span>ATmega4809 (AVR)</li>
+                    <li><span class="skill-dot"></span>Tinker Board 2S (Linux / SBC)</li>
+                    <li><span class="skill-dot"></span>SPI / I2C / UART</li>
+                    <li><span class="skill-dot"></span>ADC / DAC / PWM / Timer</li>
+                    <li><span class="skill-dot"></span>PID 제어 (가압 / 감압 튜닝)</li>
+                </ul>
+            </div>
+            <div class="skill-group reveal">
+                <h3>IDE / Tools</h3>
+                <ul class="skill-list">
+                    <li><span class="skill-dot"></span>Microchip Studio</li>
+                    <li><span class="skill-dot"></span>Keil uVision</li>
+                    <li><span class="skill-dot"></span>STM32CubeIDE</li>
+                    <li><span class="skill-dot"></span>Arduino IDE</li>
+                    <li><span class="skill-dot"></span>Android Studio</li>
+                    <li><span class="skill-dot"></span>PADS (PCB 설계)</li>
+                    <li><span class="skill-dot"></span>Git / GitHub</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── EXPERIENCE ── -->
+<section id="experience">
+    <div class="container">
+        <div class="section-heading reveal">Experience</div>
+        <div class="exp-item reveal">
+            <div class="exp-date">2021.09 — 2022.12<br><span style="font-size:12px;color:#aaa;">(학부연구)</span></div>
+            <div class="exp-content">
+                <h3>학부 연구생</h3>
+                <div class="position">연세대학교 미래캠퍼스 · 의용컴퓨터 시스템 연구실</div>
+                <div class="exp-stack"><strong>Tech Stack &nbsp;</strong>
+                    ARM Cortex-M Architecture, Embedded Systems, Memory Map, NVIC Interrupt, Register-Level Programming
+                </div>
+                <ul class="exp-bullets">
+                    <li>ARM Cortex-M 시리즈 MCU 아키텍처 학습 및 구조 분석</li>
+                    <li>Memory Map 및 Peripheral 구조 이해</li>
+                    <li>인터럽트 시스템 및 예외 처리 구조 학습</li>
+                    <li>Register-Level 기반 임베디드 프로그래밍 개념 학습</li>
+                </ul>
+            </div>
+        </div>
+        <div class="exp-item reveal">
+            <div class="exp-date">2023.03 — 2025.02<br><span style="font-size:12px;color:#aaa;">(석사과정)</span></div>
+            <div class="exp-content">
+                <h3>펌웨어 개발 연구원</h3>
+                <div class="position">연세대학교 미래캠퍼스 · 의용컴퓨터 시스템 연구실</div>
+                <div class="exp-stack"><strong>Tech Stack &nbsp;</strong>
+                    C, Java, ATmega4809, Tinker Board 2S(SBC), MAX1032(ADC), AD5420(DAC), ADUM1400/ISO7421, DRV110, Android(MVVM·LiveData·JWT), NestJS, MongoDB, Vue.js 3, WebSocket, REST API, SPI, UART, PID 제어
+                </div>
+                <ul class="exp-bullets">
+                    <li>의공학부 수업 조교 (디지털 시스템, 헬스케어 계측의 이해, IoT 임베디드 시스템)</li>
+                    <li>코끼리 재활자전거 IoT 시스템 개발 (ESP32 Feather V2, ADS1232, 4채널 힘센서 동기 수집, WebSocket)</li>
+                    <li>IoT 고압산소챔버 하드웨어 설계 (압력·온도·산소·CO₂·습도 센서, MAX1032 SPI ADC, ADUM1400 Isolation 회로)</li>
+                    <li>비례제어 밸브 SPI 제어 (AD5420 DAC Daisy Chain, 4-20mA 출력) 및 솔레노이드 밸브 구동 (DRV110)</li>
+                    <li>PID 알고리즘으로 챔버 가압·감압 정밀 제어</li>
+                    <li>Android MVVM 앱·NestJS+MongoDB 서버·Vue.js 3 웹 개발 (JWT 인증, RBAC, WebSocket 실시간 통신)</li>
+                    <li>식품의약품안전처 기준 시스템 성능 검증 완료 (가압속도·환기성능·응급배기밸브 등 9개 항목)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── EDUCATION ── -->
+<section id="education">
+    <div class="container">
+        <div class="section-heading reveal">Education</div>
+        <div class="exp-item reveal">
+            <div class="exp-date">2023.03 — 2025.02</div>
+            <div class="exp-content">
+                <h3>의공학 석사</h3>
+                <div class="position">연세대학교 미래캠퍼스 · 의용컴퓨터 시스템 연구실</div>
+                <p>IoT 기술을 활용한 안드로이드 OS 기반 고압산소챔버 제어 및 모니터링 시스템 개발을 석사 논문 주제로 수행하였습니다. Tinker Board 2S(SBC) 기반 중앙 제어 시스템, PID 압력 제어 알고리즘, 안드로이드 애플리케이션(MVVM), NestJS 서버, Vue.js 웹 애플리케이션까지 전체 시스템 스택을 설계 및 개발하였습니다.</p>
+            </div>
+        </div>
+        <div class="exp-item reveal">
+            <div class="exp-date">2017.03 — 2023.02</div>
+            <div class="exp-content">
+                <h3>의료시스템공학 학사</h3>
+                <div class="position">연세대학교 미래캠퍼스</div>
+                <p>전자회로, 인체생리학, 마이크로컴퓨터, 의용계측, 재활공학 등의 핵심 교과목을 이수하며 의공학 기초를 탄탄히 쌓았습니다. 하드웨어와 소프트웨어를 아우르는 융합적 사고를 키울 수 있었습니다.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── PROJECTS ── -->
+<section id="projects">
+    <div class="container">
+        <div class="section-heading reveal">Projects</div>
+
+        <!-- Research Projects -->
+        <div class="projects-category">
+            <div class="category-label">Research Projects</div>
+            <div class="project-cards">
+
+                <div class="project-card reveal">
+                    <div class="project-card-image">
+                        <img src="images/projects/hbot.png" alt="HBOT"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="project-card-image-placeholder">No Image</div>
+                    </div>
+                    <div class="project-card-body">
+                        <div class="project-card-badge">석사 논문 · 의료기기 IoT 시스템</div>
+                        <div class="project-card-title">IoT 기반 고압산소치료기 (HBOT)</div>
+                        <div class="project-card-date">2023.03 — 2025.02 · 연세대학교 연구실</div>
+                        <div class="project-card-desc">
+                            풀스택 시스템 설계 및 개발. 압력·온도·산소·CO₂·습도 센서 통합, PID 알고리즘 가압·감압 정밀 제어. 식약처 기준 9개 항목 성능 검증 완료.
+                        </div>
+                        <div class="project-card-stack">
+                            <span>C</span><span>Java</span><span>ATmega4809</span>
+                            <span>SPI / UART</span><span>PID</span>
+                            <span>NestJS</span><span>MongoDB</span><span>Vue.js 3</span>
+                        </div>
+                        <a href="https://github.com/bromine1997" target="_blank" class="project-card-link">GitHub →</a>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-card-image">
+                        <img src="images/projects/elephant-bike.png" alt="재활자전거"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="project-card-image-placeholder">No Image</div>
+                    </div>
+                    <div class="project-card-body">
+                        <div class="project-card-badge">재활공학 IoT 시스템</div>
+                        <div class="project-card-title">코끼리 재활자전거 IoT</div>
+                        <div class="project-card-date">2023.03 — 2025.02 · 연세대학교 연구실</div>
+                        <div class="project-card-desc">
+                            ESP32 Feather V2 기반 IoT 시스템 개발. ADS1232 24-bit ADC로 4채널 힘 센서(로드셀) 동기 수집. WebSocket으로 실시간 모니터링 서버 전송.
+                        </div>
+                        <div class="project-card-stack">
+                            <span>C</span><span>C++</span><span>ESP32</span>
+                            <span>ADS1232</span><span>SPI</span><span>WebSocket</span>
+                        </div>
+                        <a href="https://github.com/bromine1997" target="_blank" class="project-card-link">GitHub →</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Side Projects -->
+        <div class="projects-category">
+            <div class="category-label">Side Projects</div>
+            <div class="project-cards">
+
+                <div class="project-card reveal">
+                    <div class="project-card-image">
+                        <img src="images/projects/atmega4809.jpg" alt="ATmega4809"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="project-card-image-placeholder">No Image</div>
+                    </div>
+                    <div class="project-card-body">
+                        <div class="project-card-badge">Embedded Side Project</div>
+                        <div class="project-card-title">ATmega4809 임베디드 시스템</div>
+                        <div class="project-card-date">Side Project</div>
+                        <div class="project-card-desc">
+                            AVR MCU 기반 저전력 임베디드 펌웨어 개발. LCD, UART, I2C, SPI, ADC, Timer 주변장치 인터페이스 구현.
+                        </div>
+                        <div class="project-card-stack">
+                            <span>C</span><span>ATmega4809</span>
+                            <span>AVR Studio</span><span>UART</span><span>SPI / I2C</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-card-image">
+                        <img src="images/projects/ecg.jpg" alt="ECG"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="project-card-image-placeholder">No Image</div>
+                    </div>
+                    <div class="project-card-body">
+                        <div class="project-card-badge">Hardware Side Project</div>
+                        <div class="project-card-title">심전도(ECG) 측정 하드웨어</div>
+                        <div class="project-card-date">Side Project</div>
+                        <div class="project-card-desc">
+                            아날로그 프론트엔드 회로 설계 및 직접 납땜. 계측 증폭기, 노이즈 필터링 구현. MCU ADC 연동까지 전 과정 담당.
+                        </div>
+                        <div class="project-card-stack">
+                            <span>C</span><span>회로 설계</span>
+                            <span>ADC</span><span>신호처리</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section id="contact">
+    <div class="container">
+        <div class="section-heading reveal">Contact</div>
+        <p>임베디드 / 펌웨어 개발 포지션에 관심 있는 회사라면 언제든지 연락주세요.</p>
+        <div class="contact-grid">
+            <div class="contact-card reveal">
+                <h4>Location</h4>
+                <p>경기도 화성시 동탄</p>
+            </div>
+            <div class="contact-card reveal">
+                <h4>Email</h4>
+                <a href="mailto:sbm8011@naver.com">sbm8011@naver.com</a>
+            </div>
+            <div class="contact-card reveal">
+                <h4>Phone</h4>
+                <a href="tel:01084329735">010-8432-9735</a>
+            </div>
+            <div class="contact-card reveal">
+                <h4>GitHub / Blog</h4>
+                <a href="https://github.com/bromine1997" target="_blank">github.com/bromine1997</a><br>
+                <a href="https://bromine1997.tistory.com/" target="_blank">bromine1997.tistory.com</a>
+            </div>
+        </div>
+        <a href="mailto:sbm8011@naver.com" class="cta-btn">연락주세요</a>
+    </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+    <p>© <script>document.write(new Date().getFullYear())</script> 서보민 (Seo Bo Min) · All rights reserved</p>
+</footer>
+
+<!-- Scripts -->
+<script src="js/typing.js"></script>
+<script src="js/scroll-reveal.js"></script>
+
+</body>
+</html>

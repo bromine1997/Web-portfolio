@@ -1,0 +1,44 @@
+/* ================================================
+   animations.css — 모든 애니메이션 / 트랜지션
+   ================================================ */
+
+/* ── 스크롤 리빌 ── */
+.reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.65s ease, transform 0.65s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ── 타이핑 커서 ── */
+.typing-cursor {
+    display: inline-block;
+    width: 4px;
+    height: 0.85em;
+    background: var(--yellow);
+    border-radius: 2px;
+    vertical-align: middle;
+    margin-left: 6px;
+    animation: blink 0.7s step-start infinite;
+}
+
+/* ── 키프레임 ── */
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0; }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

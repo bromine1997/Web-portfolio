@@ -1,0 +1,127 @@
+/* ================================================
+   profile.css — 프로필 섹션 + 소개글
+   ================================================ */
+
+/* ── Profile ── */
+#profile {
+    background: #fff;
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.profile-photo-wrap {
+    position: relative;
+    width: 220px;
+}
+
+.profile-photo-wrap img,
+.profile-photo-placeholder {
+    display: block;
+    width: 220px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-hover);
+    background: var(--bg-soft);
+}
+
+.profile-photo-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+}
+
+.profile-info h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: var(--text);
+}
+
+.profile-info h2 span {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-soft);
+    margin-left: 10px;
+}
+
+.profile-badge {
+    display: inline-block;
+    background: var(--yellow);
+    color: #1a1a1a;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 7px 16px;
+    margin: 12px 0 24px;
+    letter-spacing: 0.04em;
+    border-radius: 999px;
+}
+
+.profile-contact {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.profile-contact li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    color: var(--text-muted);
+}
+
+.profile-contact li .icon {
+    color: var(--yellow-hover);
+    font-size: 16px;
+    width: 20px;
+    text-align: center;
+}
+
+.profile-contact li a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+.profile-contact li a:hover {
+    color: var(--yellow-hover);
+}
+
+/* ── About Text ── */
+#about-text {
+    background: var(--bg-soft);
+    padding: 80px 24px;
+}
+
+.about-catchphrase {
+    font-size: clamp(1.6rem, 3.2vw, 2.4rem);
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1.45;
+    margin-bottom: 28px;
+    border-left: 5px solid var(--yellow);
+    padding-left: 20px;
+}
+
+.about-body p {
+    font-size: 15px;
+    line-height: 2;
+    color: var(--text-muted);
+    margin-bottom: 14px;
+    max-width: 720px;
+}
+
+/* ── 반응형 ── */
+@media (max-width: 900px) {
+    .profile-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+}
