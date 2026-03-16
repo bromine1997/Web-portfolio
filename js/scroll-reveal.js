@@ -35,7 +35,7 @@
                 });
             }
         });
-    }, { threshold: 0.35, rootMargin: '-60px 0px -55% 0px' });
+    }, { threshold: 0.1, rootMargin: '-60px 0px -45% 0px' });
 
     sections.forEach(function (section) {
         navObserver.observe(section);
