@@ -56,6 +56,15 @@ nav ul li a:hover::after {
     transform: scaleX(1);
 }
 
+/* ── 활성 섹션 표시 ── */
+nav ul li a.active {
+    color: var(--text);
+}
+
+nav ul li a.active::after {
+    transform: scaleX(1);
+}
+
 /* ── 반응형 ── */
 @media (max-width: 768px) {
     nav ul {

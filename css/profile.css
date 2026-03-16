@@ -79,10 +79,17 @@
 }
 
 .profile-contact li .icon {
-    color: var(--yellow-hover);
-    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 20px;
-    text-align: center;
+    flex-shrink: 0;
+}
+
+.profile-contact li .icon svg {
+    width: 15px;
+    height: 15px;
+    stroke: var(--yellow-hover);
 }
 
 .profile-contact li a {
@@ -94,10 +101,11 @@
     color: var(--yellow-hover);
 }
 
-/* ── About Text ── */
-#about-text {
-    background: var(--bg-soft);
-    padding: 80px 24px;
+/* ── About Text (profile 내부 통합) ── */
+.about-section {
+    margin-top: 56px;
+    padding-top: 48px;
+    border-top: 1.5px solid var(--border);
 }
 
 .about-catchphrase {

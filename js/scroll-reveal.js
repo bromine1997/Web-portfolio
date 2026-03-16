@@ -1,9 +1,8 @@
 /* ================================================
-   scroll-reveal.js — 스크롤 시 요소 페이드인 애니메이션
-   .reveal 클래스가 붙은 요소가 뷰포트에 들어오면
-   .visible 클래스를 추가해 애니메이션 실행
+   scroll-reveal.js — 스크롤 애니메이션 + 네비게이션 활성화
    ================================================ */
 
+/* ── 스크롤 리빌 ── */
 (function () {
     var observer = new IntersectionObserver(function (entries) {
         entries.forEach(function (entry) {
@@ -16,5 +15,29 @@
 
     document.querySelectorAll('.reveal').forEach(function (el) {
         observer.observe(el);
+    });
+})();
+
+/* ── 네비게이션 활성 섹션 표시 ── */
+(function () {
+    var sections = document.querySelectorAll('section[id]');
+    var navLinks = document.querySelectorAll('nav ul li a');
+
+    var navObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                var id = entry.target.getAttribute('id');
+                navLinks.forEach(function (link) {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === '#' + id) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+        });
+    }, { threshold: 0.35, rootMargin: '-60px 0px -55% 0px' });
+
+    sections.forEach(function (section) {
+        navObserver.observe(section);
     });
 })();
