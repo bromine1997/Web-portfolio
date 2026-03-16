@@ -8,7 +8,7 @@
 
 /* ── 카테고리 그룹 ── */
 .projects-category {
-    margin-bottom: 52px;
+    margin-bottom: 56px;
 }
 
 .projects-category:last-child {
@@ -18,22 +18,22 @@
 /* 카테고리 라벨 (Research / Side) */
 .category-label {
     display: inline-block;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 700;
     color: #1a1a1a;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
     background: var(--yellow);
     border-radius: 999px;
-    padding: 7px 18px;
-    margin-bottom: 22px;
+    padding: 7px 20px;
+    margin-bottom: 24px;
 }
 
 /* ── 카드 그리드 ── */
 .project-cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 22px;
+    gap: 24px;
 }
 
 /* ── 프로젝트 카드 ── */
@@ -42,6 +42,8 @@
     border: 1.5px solid var(--border);
     border-radius: var(--radius-lg);
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
     transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
     box-shadow: var(--shadow);
 }
@@ -52,12 +54,14 @@
     border-color: var(--yellow-border);
 }
 
-/* 카드 이미지 영역 */
+/* ── 카드 이미지 영역 ── */
 .project-card-image {
+    display: block;          /* <a> 태그 block 처리 */
     height: 200px;
     overflow: hidden;
     position: relative;
     background: var(--bg-section);
+    flex-shrink: 0;
 }
 
 .project-card-image img {
@@ -65,8 +69,14 @@
     height: 100%;
     object-fit: cover;
     display: block;
+    transition: transform 0.4s ease;
 }
 
+.project-card:hover .project-card-image img {
+    transform: scale(1.04);
+}
+
+/* 이미지 없을 때 플레이스홀더 */
 .project-card-image-placeholder {
     width: 100%;
     height: 100%;
@@ -75,63 +85,73 @@
     justify-content: center;
     background: linear-gradient(135deg, #f0f1f3, #e4e6ea);
     color: #bbb;
-    font-size: 12px;
-    letter-spacing: 0.1em;
+    font-size: 11px;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
+    font-weight: 500;
 }
 
-/* 카드 본문 */
+/* ── 카드 본문 ── */
 .project-card-body {
     padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 /* 프로젝트 유형 뱃지 */
 .project-card-badge {
     display: inline-block;
+    align-self: flex-start;
     font-size: 11px;
     font-weight: 600;
-    padding: 5px 12px;
+    padding: 4px 12px;
     border-radius: 999px;
     background: var(--yellow-light);
-    color: #8a6d00;
+    color: #7a5f00;
     border: 1px solid var(--yellow-border);
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     letter-spacing: 0.03em;
 }
 
+/* 프로젝트 제목 */
 .project-card-title {
     font-family: 'Oswald', sans-serif;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 600;
     color: var(--text);
-    margin-bottom: 5px;
+    margin-bottom: 4px;
     text-transform: uppercase;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.03em;
+    line-height: 1.3;
 }
 
+/* 날짜/소속 */
 .project-card-date {
-    font-size: 12px;
+    font-size: 11.5px;
     color: var(--text-soft);
-    margin-bottom: 14px;
+    margin-bottom: 12px;
 }
 
+/* 설명 */
 .project-card-desc {
     font-size: 13px;
-    line-height: 1.9;
+    line-height: 1.85;
     color: var(--text-muted);
     margin-bottom: 16px;
+    flex: 1;
 }
 
-/* 기술 스택 태그 */
+/* ── 기술 스택 태그 ── */
 .project-card-stack {
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
-    margin-bottom: 18px;
+    margin-bottom: 20px;
 }
 
 .project-card-stack span {
-    padding: 4px 10px;
+    padding: 3px 10px;
     border-radius: 6px;
     background: var(--bg-soft);
     border: 1px solid var(--border);
@@ -140,19 +160,28 @@
     font-weight: 500;
 }
 
+/* ── GitHub 링크 버튼 컨테이너 ── */
+.project-card-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: auto;
+}
+
 /* GitHub 링크 버튼 */
 .project-card-link {
     display: inline-flex;
     align-items: center;
-    gap: 6px;
-    font-size: 13px;
+    gap: 5px;
+    font-size: 12px;
     font-weight: 600;
     color: var(--text);
     text-decoration: none;
-    padding: 8px 18px;
+    padding: 7px 16px;
     border: 1.5px solid var(--border);
     border-radius: 999px;
-    transition: all 0.2s;
+    transition: all 0.2s ease;
+    white-space: nowrap;
 }
 
 .project-card-link:hover {
