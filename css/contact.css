@@ -64,30 +64,6 @@
     color: var(--yellow);
 }
 
-/* CTA 버튼 */
-.cta-btn {
-    display: inline-block;
-    margin-top: 44px;
-    padding: 16px 48px;
-    background: var(--yellow);
-    color: #1a1a1a;
-    font-family: 'Oswald', sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 0.10em;
-    text-transform: uppercase;
-    text-decoration: none;
-    border-radius: 999px;
-    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
-}
-
-.cta-btn:hover {
-    background: var(--yellow-hover);
-    color: #1a1a1a;
-    transform: translateY(-3px);
-    box-shadow: 0 14px 30px rgba(255, 205, 0, 0.28);
-}
-
 /* ── Footer ── */
 footer {
     background: #111;
