@@ -14,23 +14,14 @@
     transform: translateY(0);
 }
 
-/* ── 타이핑 커서 ── */
-.typing-cursor {
-    display: inline-block;
-    width: 4px;
-    height: 0.85em;
-    background: var(--yellow);
-    border-radius: 2px;
-    vertical-align: middle;
-    margin-left: 6px;
-    animation: blink 0.7s step-start infinite;
+/* ── 스크램블 노이즈 글자 ── */
+.scramble-noise {
+    color: var(--yellow);
+    opacity: 0.75;
+    font-style: normal;
 }
 
 /* ── 키프레임 ── */
-@keyframes blink {
-    0%, 100% { opacity: 1; }
-    50%       { opacity: 0; }
-}
 
 @keyframes fadeUp {
     from {
